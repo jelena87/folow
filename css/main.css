@@ -34,6 +34,12 @@ html, body {
   text-transform: uppercase;
   color: #fff;
 }
+.navbar-default .navbar-toggle {
+	border-color: transparent;
+}
+.navbar-default .navbar-toggle .icon-bar {
+	background-color: #fff;
+}
 .navbar-toggle {
   margin-right: 50px;
   margin-top: 24px;
@@ -151,7 +157,13 @@ footer li a {
 	border-radius: 5px;
 	background: linear-gradient(to right, rgba(182, 151, 246) , rgba(98, 217, 231));
 	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+		-webkit-text-fill-color: transparent;
+		-moz-background-clip: text;
+		-moz-text-fill-color: transparent;
+		-ms-background-clip: text;
+		-ms-text-fill-color: transparent;
+		background-clip: text;
+		text-fill-color: transparent;
 	width: 48%;
 }
 .btn-gradient-border2:hover {
