@@ -31,7 +31,7 @@
   				<ul class="nav navbar-nav navbar-right">
   					<li><a href="index.html" class="navLinks">Home</a></li>
   					<li><a href="howItWorks.html" class="navLinks">How it works</a></li>
-  					<li><a href="" class="navLinks">Anouncements</a></li>
+  					<li><a href="" class="navLinks">Announcement</a></li>
   					<li><a href="" class="navLinks">Why follow</a></li>
   					<li class="navBtn"><a>Login/Signup</a></li>
   				</ul>
@@ -61,7 +61,7 @@
       <div class="row">
         <div class="col-sm-12 headerImg">
           <img src="images/image-1.png" width="100%" height="520" class="video" id="8kYi3cuXHd8" alt="Video" />
-          <div class="playBtn">
+          <div class="playBtn btnPlay">
             <img src="images/folow-in-2-min.png" alt="">
           </div>
         </div>
@@ -71,13 +71,13 @@
       <div class="row">
         <div class="col-lg-6 col-md-6 col-sm-12 videos">
           <img src="images/image-2.png" width="100%"  height="260" class="video" id="8kYi3cuXHd8" alt="Video" />
-          <div class="playBtn2">
+          <div class="playBtn2 btnPlay">
             <img src="images/for-friends.png" alt="">
           </div>
         </div>
         <div class="col-lg-6 col-md-6 col-sm-12 videos">
           <img src="images/image-3.png" width="100%" height="260" class="video" id="8kYi3cuXHd8" alt="Video" />
-          <div class="playBtnCreators">
+          <div class="playBtnCreators btnPlay">
             <img src="images/ForCreators.png" alt="">
           </div>
         </div>
@@ -85,13 +85,13 @@
       <div class="row">
         <div class="col-lg-6 col-md-6 col-sm-12 videos">
           <img src="images/image-4.png" width="100%" height="260" class="video" id="8kYi3cuXHd8" alt="Video" />
-          <div class="playBtnPublicFig">
+          <div class="playBtnPublicFig btnPlay">
             <img src="images/ForPublicFigures.png" alt="">
           </div>
         </div>
         <div class="col-lg-6 col-md-6 col-sm-12 videos">
-          <img src="images/image-5.png" width="100%" height="260" class="video" id="8kYi3cuXHd8" alt="Video" />
-          <div class="playBtn2">
+          <img src="images/image-5.png"  height="260" class="video" id="8kYi3cuXHd8" alt="Video" />
+          <div class="playBtn2 btnPlay">
             <img src="images/for-brands.png" alt="">
           </div>
         </div>
@@ -169,6 +169,7 @@ $(document).ready(function() {
 	$('.video').click(function() {
 		var videoId = $(this).attr('id');
 		$(this).replaceWith(embed(videoId));
+    $('.btnPlay').hide();
 	});
 });
 
