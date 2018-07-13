@@ -24,7 +24,12 @@ html, body {
 .navbar-default {
 	margin-bottom: 0;
 	border: none;
-  background: linear-gradient(to right, rgba(182, 151, 246, 0.86) , rgba(98, 217, 231, 0.86));
+	background-color: rgba(182, 151, 246, 0.86);
+	background-image: -webkit-gradient(linear, left, right, from rgba(182, 151, 246, 0.86) , to rgba(98, 217, 231, 0.86));
+	background-image: -webkit-linear-gradient(left, rgba(182, 151, 246, 0.86) , rgba(98, 217, 231, 0.86));
+	background-image: -moz-linear-gradient(right, rgba(182, 151, 246, 0.86) , rgba(98, 217, 231, 0.86));
+	background-image: -o-linear-gradient(right, rgba(182, 151, 246, 0.86) , rgba(98, 217, 231, 0.86));
+	background-image: linear-gradient(to right, rgba(182, 151, 246, 0.86) , rgba(98, 217, 231, 0.86));
 }
 .navbar-right {
   padding-right: 70px;
@@ -139,7 +144,11 @@ footer li a {
 	border-style: solid;
 	border-color: rgba(182, 151, 246) rgba(98, 217, 231) rgba(182, 151, 246) rgba(98, 217, 231);
 	border-radius: 5px;
-	background: linear-gradient(to right, rgba(182, 151, 246) , rgba(98, 217, 231));
+	background-image: -webkit-gradient(linear, left, right, from rgba(182, 151, 246, 0.86) , to rgba(98, 217, 231, 0.86));
+	background-image: -webkit-linear-gradient(left, rgba(182, 151, 246, 0.86) , rgba(98, 217, 231, 0.86));
+	background-image: -moz-linear-gradient(right, rgba(182, 151, 246, 0.86) , rgba(98, 217, 231, 0.86));
+	background-image: -o-linear-gradient(right, rgba(182, 151, 246, 0.86) , rgba(98, 217, 231, 0.86));
+	background-image: linear-gradient(to right, rgba(182, 151, 246, 0.86) , rgba(98, 217, 231, 0.86));
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	width: 30%;
@@ -148,6 +157,7 @@ footer li a {
 	background: linear-gradient(to right, rgba(182, 151, 246) , rgba(98, 217, 231));
 	text-decoration: none;
 	-webkit-text-fill-color: #fff;
+	color: rgba(182, 151, 246);
 }
 .btn-gradient-border2 {
 	padding: 10px 25px;
@@ -155,7 +165,11 @@ footer li a {
 	border-style: solid;
 	border-color: rgba(182, 151, 246) rgba(98, 217, 231) rgba(182, 151, 246) rgba(98, 217, 231);
 	border-radius: 5px;
-	background: linear-gradient(to right, rgba(182, 151, 246) , rgba(98, 217, 231));
+	background-image: -webkit-gradient(linear, left, right, from rgba(182, 151, 246, 0.86) , to rgba(98, 217, 231, 0.86));
+	background-image: -webkit-linear-gradient(left, rgba(182, 151, 246, 0.86) , rgba(98, 217, 231, 0.86));
+	background-image: -moz-linear-gradient(right, rgba(182, 151, 246, 0.86) , rgba(98, 217, 231, 0.86));
+	background-image: -o-linear-gradient(right, rgba(182, 151, 246, 0.86) , rgba(98, 217, 231, 0.86));
+	background-image: linear-gradient(to right, rgba(182, 151, 246, 0.86) , rgba(98, 217, 231, 0.86));
 	-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 		-moz-background-clip: text;
