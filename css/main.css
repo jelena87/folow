@@ -154,6 +154,8 @@ footer li a {
 	width: 30%;
 }
 .btn-gradient-border:hover {
+	background: #62d9e7;
+	border-color: #b697f6;
 	background: linear-gradient(to right, rgba(182, 151, 246) , rgba(98, 217, 231));
 	text-decoration: none;
 	-webkit-text-fill-color: #fff;
