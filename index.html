@@ -74,9 +74,9 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-sm-12 headerImg">
-          <img src="images/image-1.png" width="100%" height="520" class="video" id="8kYi3cuXHd8" alt="Video" />
+          <img src="images/image-1.png" width="100%" height="520" class="video" id="8kYi3cuXHd8" alt="Video" onmouseover="this.src='images/image-1-hover.png'" onmouseout="this.src='images/image-1.png'" />
           <div class="playBtn btnPlay">
-            <img src="images/folow-in-2-min.png" alt="">
+            <img src="images/folow-in-2-min.png" alt="" class="playBtn btnPlay">
           </div>
         </div>
       </div>
@@ -84,13 +84,13 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-lg-6 col-md-6 col-sm-12 videos">
-          <img src="images/image-2.png" width="100%"  height="260" class="video" id="8kYi3cuXHd8" alt="Video" />
+          <img src="images/image-2.png" width="100%"  height="260" class="video" id="8kYi3cuXHd8" alt="Video" onmouseover="this.src='images/image-2-hover.png'" onmouseout="this.src='images/image-2.png'" />
           <div class="playBtn2 btnPlay">
             <img src="images/for-friends.png" alt="">
           </div>
         </div>
         <div class="col-lg-6 col-md-6 col-sm-12 videos">
-          <img src="images/image-3.png" width="100%" height="260" class="video" id="8kYi3cuXHd8" alt="Video" />
+          <img src="images/image-3.png" width="100%" height="260" class="video" id="8kYi3cuXHd8" alt="Video" onmouseover="this.src='images/image-3-hover.png'" onmouseout="this.src='images/image-3.png'" />
           <div class="playBtnCreators btnPlay">
             <img src="images/ForCreators.png" alt="">
           </div>
@@ -98,13 +98,13 @@
       </div>
       <div class="row">
         <div class="col-lg-6 col-md-6 col-sm-12 videos">
-          <img src="images/image-4.png" width="100%" height="260" class="video" id="8kYi3cuXHd8" alt="Video" />
+          <img src="images/image-4.png" width="100%" height="260" class="video" id="8kYi3cuXHd8" alt="Video" onmouseover="this.src='images/image-4-hover.png'" onmouseout="this.src='images/image-4.png'" />
           <div class="playBtnPublicFig btnPlay">
             <img src="images/ForPublicFigures.png" alt="">
           </div>
         </div>
         <div class="col-lg-6 col-md-6 col-sm-12 videos">
-          <img src="images/image-5.png"  height="260" class="video" id="8kYi3cuXHd8" alt="Video" />
+          <img src="images/image-5.png"  height="260" class="video" id="8kYi3cuXHd8" alt="Video" onmouseover="this.src='images/image-5-hover.png'" onmouseout="this.src='images/image-5.png'" />
           <div class="playBtn2 btnPlay">
             <img src="images/for-brands.png" alt="">
           </div>
@@ -183,8 +183,12 @@ $(document).ready(function() {
 	$('.video').click(function() {
 		var videoId = $(this).attr('id');
 		$(this).replaceWith(embed(videoId));
-    $('.btnPlay').hide();
 	});
+});
+$(document).ready(function() {
+  $('.btnPlay').click(function(){
+      $(this).hide();
+    });
 });
 
 function embed(id) {
