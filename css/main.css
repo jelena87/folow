@@ -368,6 +368,9 @@ img {
 		margin-top: -70px;
 		margin-left: -70px;
 	}
+	.videoFolow iframe {
+		height: 520px;
+	}
 	.zoneRight {
 		margin-top: 200px;
 	}
