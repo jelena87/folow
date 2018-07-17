@@ -150,12 +150,16 @@
   </section>
   <div class="container-fluid">
     <div class="row">
-      <div class="col-lg-8 col-lg-offset-2 col-sm-12 videoFolow">
+      <div class="col-lg-8 col-lg-offset-2 col-sm-12" style="text-align: center">
         <h2>Folow explaned in 2 mins</h2>
-        <img src="images/image-1.png" width="100%" height="520" class="video" id="8kYi3cuXHd8" />
-        <div class="playBtn3">
-          <img src="images/folow.png" alt="">
+        <div class="videoFolow">
+          <img src="images/image-1.png" width="100%" height="520" alt="Video" class="video" />
+          <!-- <iframe  src="http://www.youtube.com/embed/rRoy6I4gKWU?autoplay=1" frameborder="0" allowfullscreen></iframe>-->
+          <div class="playBtn3 btnPlay">
+            <img src="images/folow.png" alt="" class="playBtn btnPlay">
+          </div>
         </div>
+
       </div>
     </div>
   </div>
@@ -447,23 +451,26 @@
     output.innerHTML = this.value;
     }
     slider2.oninput = function() {
-    output2.innerHTML = this.value;
+    output2.innerHTML = '$' + this.value;
     }
 
-    $(document).ready(function() {
-    	$('.video').click(function() {
-    		var videoId = $(this).attr('id');
-    		$(this).replaceWith(embed(videoId));
-    	});
+    $(function() {
+        var videos  = $(".videoFolow");
+
+            videos.on("click", function(){
+                var elm = $(this),
+                    conts   = elm.contents(),
+                    le      = conts.length,
+                    ifr     = null;
+
+                for(var i = 0; i<le; i++){
+                  if(conts[i].nodeType == 8) ifr = conts[i].textContent;
+                }
+
+                elm.addClass("player").html(ifr);
+                elm.off("click");
+            });
     });
-
-    function embed(id) {
-    	embedCode = '<iframe allowFullScreen allowTransparency="true" class="video-player"' +
-    	'frameborder="0" height="432" id="vzvd-' + id + '" mozallowfullscreen' +
-    	'name="vzvd-' + id + '" src="https://www.youtube.com/embed/' + id + '/player?autoplay=true"' +
-    	'title="video player" type="text/html" webkitAllowFullScreen width="100"></iframe>';
-    	return embedCode;
-    }
   </script>
 </body>
 </html>
