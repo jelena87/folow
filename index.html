@@ -13,8 +13,6 @@
       <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
 
-
-
   </head>
   <body>
     <nav class="navbar navbar-default navbar-fixed-top">
@@ -172,32 +170,31 @@
         </div>
       </div>
     </footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/css3-animate-it/1.0.3/js/css3-animate-it.min.js">
     </script>
     <script>
     $(document).ready(function(){
-      $('.customer-logos').slick({
-        slidesToShow: 6,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 1000,
-        arrows: false,
-        dots: false,
-        pauseOnHover: false,
-        responsive: [{
-          breakpoint: 768,
-          settings: {
-            slidesToShow: 4
-          }
-        }, {
-          breakpoint: 520,
-          settings: {
-            slidesToShow: 3
-          }
-        }]
-      });
+$('.customer-logos').slick({
+  slidesToShow: 6,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 1000,
+  arrows: false,
+  dots: false,
+  pauseOnHover: false,
+  responsive: [{
+    breakpoint: 768,
+    settings: {
+      slidesToShow: 4
+    }
+  }, {
+    breakpoint: 520,
+    settings: {
+      slidesToShow: 3
+    }
+  }]
+});
 });
 $(function() {
     var videos  = $(".video");

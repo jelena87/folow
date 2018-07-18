@@ -13,21 +13,6 @@ html, body {
 	padding-left: 0 !important;
 	padding-right: 0 !important;
 }
-p {
-	font-size: 45px;
-}
-h1 {
-	font-size: 70px;
-}
-h2 {
-	font-size: 60px;
-}
-h4 {
-	font-size: 50px;
-}
-h6 {
-	font-size: 40px;
-}
 .navbar-default {
 	margin-bottom: 0;
 	border: none;
@@ -105,7 +90,6 @@ footer {
 footer ul li {
   list-style: none;
   color: #fff;
-	font-size: 40px;
 }
 footer li a {
   color: #fff;
@@ -162,7 +146,6 @@ footer li a {
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	width: 70%;
-	font-size: 35px;
 	margin-bottom: 10px;
 }
 .btn-gradient-border:hover {
@@ -193,7 +176,6 @@ footer li a {
 		background-clip: text;
 		text-fill-color: transparent;
 	width: 98%;
-	font-size: 35px;
 	margin-bottom: 10px;
 }
 .btn-gradient-border2:hover {
