@@ -442,13 +442,9 @@ img {
 @media only screen and (min-width: 1024px) {
 	.btn-gradient-border2 {
 		width: 18%;
-		font-size: 15px;
-		border-width: 1.1px;
 	}
 	.btn-gradient-border {
 		width: 30%;
-		font-size: 15px;
-		border-width: 1.1px;
 	}
 	img {
 		margin-top: 20px;
