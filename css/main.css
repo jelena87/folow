@@ -80,12 +80,12 @@ html, body {
 	width: 100%;
 }
 .clients {
-	padding: 100px;
+	padding: 20px;
 }
 footer {
   background: #212121;
-  padding: 40px;
-	text-align: center;
+  padding: 5px;
+	text-align: left;
 }
 footer ul li {
   list-style: none;
@@ -99,6 +99,12 @@ footer li a {
 }
 .firstFooterLinks>li>a, .firstFooterLinks>.copy {
   margin-left: 10px;
+}
+.firstFooterLinks {
+	padding: 0;
+}
+.footer>ul {
+	padding-left: 10px;
 }
 .videos {
   padding: 0;
@@ -441,6 +447,9 @@ img {
 		font-size: 15px;
 		border-width: 1.1px;
 	}
+	.clients {
+		padding: 100px;
+	}
 	.navbar-default .navbar-nav>li>a {
 		font-size: 15px;
 	}
@@ -460,6 +469,7 @@ img {
 	}
 	footer {
 		text-align: left;
+		padding: 40px;
 	}
 	footer ul li {
 		font-size: 15px;
